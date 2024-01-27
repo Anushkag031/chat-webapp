@@ -19,7 +19,6 @@ export const AuthContextProvider=({children}) => {
             console.log(user);
             setLoading(false);
         });
-
         return () => {
             unsub();
         }
