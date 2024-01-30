@@ -1,6 +1,13 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import user from "../img/user.png"
 const Chats = () => {
+
+  const [chats, setChats] = useState([])
+
+  useEffect(() => {
+
+  })
+
   return (
     <div className='chats'>
       <div className="userchat">

@@ -4,6 +4,8 @@ import { collection, getDoc, query, serverTimestamp, where,doc,setDoc, getDocs }
 import {db} from "../firebase"
 import { AuthContext } from '../context/AuthContext';
 import { updateDoc } from "firebase/firestore";
+
+
 const Search = () => {
 
   const [username, setUsername]=useState("");
