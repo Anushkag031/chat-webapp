@@ -51,6 +51,9 @@ const Search = () => {
     ? currentUser.uid + user.uid 
     : user.uid + currentUser.uid;
 
+    //console.log(combinedId)
+    //console.log(user.uid)
+    if(combinedId){
     try 
     {
       const res= await getDoc(doc(db, "chats", combinedId));
@@ -86,6 +89,13 @@ const Search = () => {
     }
     setUser(null);
     setUsername("")
+
+  }
+  else {
+    console.error('Invalid combinedId:', combinedId);
+  }
+    //setUser(null);
+   // setUsername("")
 
     //create user chats
 

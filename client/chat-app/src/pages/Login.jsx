@@ -29,7 +29,7 @@ const Login = () => {
   }
   catch (err) {
       setErr(true);
-
+    console.log("login error: " + err.message);
     }
   }
 
